@@ -1,0 +1,101 @@
+.Logo
+{
+    width: 200px;  
+    height: 200px;
+    margin-left: 5%;
+    margin-right: auto;
+    display: flex;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+	background-color: #F0F0F0;
+	margin-bottom:80px;
+	width:100%;
+}
+
+/*#C68A48,Ebbc83,#F0F0F0*/
+
+.header-nav
+{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    margin-left: 0%;
+    padding: 0%;
+
+}
+
+.header-nav li
+{
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    display: block;
+	padding: 20px 40px;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 50px; 
+    line-height: 1;
+}
+
+
+.header-nav li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:#F0F0F0;
+    border-top: 1px solid #ccc;
+    position: relative;
+    width: 100%;
+	margin-top:auto;
+}
+
+.contacts
+{
+    margin: 5px;
+}
+
+.contacts p
+{
+    margin: 5px;
+    display: flex;
+}
+
+.footer-links {
+    margin-right: 20px; 
+    text-align: right; 
+}
+
+.footer-links a
+{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    margin-left: 40px;
+
+}
+.footer-links a:hover
+{
+    color: blue; 
+}
+
+.span
+{
+    margin-left: 20px; 
+    margin-right: 20px; 
+}

@@ -1,0 +1,97 @@
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-image:url("mylast.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+    font-family: sans-serif;
+}
+
+html{
+	height: 100%;
+}
+
+.header {
+    width: 100%; 
+}
+
+footer {
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.maindata {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px 0; 
+	flex: 1; 
+}
+
+.maindata h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin-bottom: 15px;
+	color: #C68A48;
+}
+
+.maindata #para1 {
+	padding-top: 5px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 19px;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.maindata .services {
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.maindata .services .card button {
+	width: 330px;
+	height: 280px;
+	text-align: center;
+	background-color: #222;
+	color: white;
+	font-size: 1.1rem;
+	padding: 20px 15px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border-radius: 10px; 
+	cursor: pointer;
+	border: rgb(130,106,251);
+}	
+
+.maindata .services .card button:hover {
+	background: #6E5733;
+}
+
+.maindata .services .card:hover .content {
+	transform: scale(1.07);
+}
+
+.maindata .services .card .card-content .title {
+	padding: 5px 5px;
+	font-size: 28px;
+	font-weight: 700;
+	color: #C68A48;
+	font-style: bold;
+}

@@ -1,0 +1,182 @@
+.Logo
+{
+    /* Sets the width and height of the logo image */
+    width: 200px;  
+    height: 200px;
+    
+    /*Aligning to the left*/
+    margin-left: 10%%;
+    margin-right: auto;
+    display: flex;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+}
+/*Styling for the whole nav bar*/
+.header-nav
+{
+    /*Removing the bullets*/
+    list-style: none;
+    /*Removing margins and paddings*/
+    display: flex;
+    margin-right: 20px;
+    margin-left: 0%;
+    padding: 0%;
+
+}
+/*Adding styling for individual items*/
+.header-nav li
+{
+    margin-left: 20px;
+    margin-right: auto;
+}
+/* Styling the links in the nav bar */
+.header-nav li a {
+    /*Removing the underlines*/
+    text-decoration: none;
+    /*Setting the new styles*/
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+
+    /*Creating the oval shape*/
+    padding: 20px 40px;
+    /*Setting the background color to change on hover*/
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 50px; /* Oval shape */
+    line-height: 1; /* Ensures no extra height added */
+}
+
+/* Hover effect */
+.header-nav li a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Footer */
+footer {
+    display: flex; /*uses the size adjustable flex layout*/
+    justify-content: space-between; /* Separates contact info and links */
+    align-items: center; /* Aligns both sections vertically */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+.contacts
+{
+    margin: 5px;
+}
+
+.contacts p
+{
+    margin: 5px;
+    display: flex;
+}
+
+.footer-links {
+    margin-right: 20px; /* Space from the right */
+    text-align: right; /* Aligns the links to the right */
+}
+
+.footer-links a
+{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    margin-left: 40px;
+
+}
+.footer-links a:hover
+{
+    color: blue; /* Change color on hover */
+}
+
+.span /*To increase the space on either side of the | between
+privacy policy and Terms and conditions*/
+{
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+/*List Your property page*/
+.listing-headings
+{
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 10%;
+}
+
+.lyp-div /*List Your Property Division*/
+{
+    display: flex; /*created a flexible-box to hold the items*/
+    flex-direction: column;
+    margin-right: 0%;
+    margin-left: 5%;
+    width: 40%; /* Adjusting width to allow space for both sections */
+    float: left; /* Align this section to the left */
+    vertical-align: top;
+}
+.lyp-div label
+{
+    margin-bottom: 5px; /*Added a bottom margin to seperate the input and labels*/
+    font-weight: bold;
+    font-size: large;
+}
+.lyp-div input
+{
+    padding: 10px;
+    font-size: medium;
+    border: 1px solid #ccc
+    border-radius: 5px;
+}
+
+/*The list your property and the owner's info sections should be side by side*/
+
+.own-division /*Owner's information division*/
+{
+    display: flex;
+    flex-direction: column;
+    width: 45%; /* Adjusting width to align next to the List Your Property section */
+    float: right; /* Align this section to the right */
+    margin-right: 5%; /* Create some space from the right edge */
+    vertical-align: top;
+}
+
+.own-division label
+{
+    margin-bottom: 5px; /*Added a bottom margin to seperate the input and labels*/
+    font-weight: bold;
+    font-size: large;
+    /*same as lyp-div label*/
+}
+
+.own-division input
+{
+    padding: 10px;
+    font-size: medium;
+    border: 1px solid #ccc
+    border-radius: 5px;
+    /*Similar to the lyp-div input*/
+}
+
+/*The above 2 classes, even though similar in context to the 
+lyp-div classes, were added again for easy 
+management and inclusions without any confusions*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both; /* Prevents the sections from overlapping */
+    
+}
+
+.reservation
+{
+    
+}
+

@@ -1,0 +1,109 @@
+.Logo
+{
+    /* Sets the width and height of the logo image */
+    width: 100px;  
+    height: 100px;
+    
+    /*Aligning to the left*/
+    margin-left: 5%;
+    margin-right: auto;
+    display: flex;
+}
+
+.header
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 10;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+/*Styling for the whole nav bar*/
+.header-nav
+{
+    /*Removing the bullets*/
+    list-style: none;
+    /*Removing margins and paddings*/
+    display: flex;
+    margin-right: 20px;
+    margin-left: 0%;
+    padding: 0%;
+
+}
+/*Adding styling for individual items*/
+.header-nav li
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Styling the links in the nav bar */
+.header-nav li a {
+    /*Removing the underlines*/
+    text-decoration: none;
+    /*Setting the new styles*/
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+
+    /*Creating the oval shape*/
+    padding: 20px 40px;
+    /*Setting the background color to change on hover*/
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 50px; /* Oval shape */
+}
+
+/* Hover effect */
+.header-nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer */
+footer {
+    display: flex; /*uses the size adjustable flex layout*/
+    justify-content: space-between; /* Separates contact info and links */
+    align-items: center; /* Aligns both sections vertically */
+    padding: 20px;
+    background-color: #F0F0F0;
+    border-top: 1px solid #ccc;
+}
+
+.contacts
+{
+    margin: 5px;
+}
+
+.contacts p
+{
+    margin: 5px;
+    display: flex;
+}
+
+.footer-links {
+    margin-right: 20px; /* Space from the right */
+    text-align: right; /* Aligns the links to the right */
+}
+
+.footer-links a
+{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    margin-left: 40px;
+
+}
+.footer-links a:hover
+{
+    color: blue; /* Change color on hover */
+}
+
+.span
+{
+    margin-left: 20px; /* Increase this value to move the line further away */
+    margin-right: 20px; /* Add space on the right for consistency */
+}

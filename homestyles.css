@@ -1,0 +1,281 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.Logo img {
+    width: 200px;
+    height: auto;
+    
+}
+
+.header-nav {
+    list-style: none;
+    display: flex;
+}
+
+.header-nav li {
+    margin-left: 20px;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 25px;
+    text-shadow: 
+        -1px -1px 0 #000, /* Top-left outline */
+        1px -1px 0 #000,  /* Top-right outline */
+        -1px 1px 0 #000,  /* Bottom-left outline */
+        1px 1px 0 #000;   /* Bottom-right outline */
+}
+
+.header-nav li a:hover {
+    background-color: beige;
+    color: #fff;
+}
+
+.sign-button{
+    display: inline-block;
+    margin-top: 20px; /* Adds space above the button */
+    margin-right: 20px;
+    padding: 12px 25px; /* Button padding */
+    background-color: beige; /* Green background */
+    color: black; /* White text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition effect */
+    float: right;
+}
+
+.sign-button:hover {
+    background-color: #000; /* Darker green on hover */
+    color: white;
+}
+
+/* Slogan Section */
+.slogan {
+    height: 100vh;
+    background-image: url('Home\ BG.JPG'); /* Replace with correct image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-bottom: 50px; /* Adds spacing between the image and the next section */
+}
+
+.slogan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.slogan-content {
+    z-index: 1;
+}
+
+.slogan h1 {
+    font-size: 4rem;
+    font-family: 'Comic Sans MS', cursive;
+    margin-bottom: 1rem;
+}
+
+.slogan p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.explore-button {
+    display: inline-block;
+    margin-top: 20px; /* Adds space above the button */
+    padding: 12px 25px; /* Button padding */
+    background-color: beige; /* Green background */
+    color: black; /* White text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.explore-button:hover {
+    background-color: #000; /* Darker green on hover */
+    color: white;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 3rem;
+    text-align: center;
+    margin: 50px 0; /* Adds margin above and below the section */
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    background-color: transparent;
+}
+
+.why-choose-us p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* New Section with Different Background */
+.new-section {
+    height: 100vh;
+    background-image: url('HomeBG2.JPG'); /* Replace with new image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: transparent;
+    position: relative;
+}
+
+.new-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.new-section p {
+    font-size: 1.5rem;
+    max-width: 800px;
+}
+
+/* Services Section */
+.services {
+    padding: 3rem;
+    background-color: transparent;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    overflow: hidden; /* Hide the scrollbar */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.service-box {
+    background: beige;
+    padding: 1.5rem;
+    margin: 1rem;
+    min-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    width: 300px; /* Set the width of each service box */
+    margin-right: 10px; /* Space between boxes */
+}
+
+.service-box i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+}
+
+.service-box img {
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 10px; /* Add some space between the image and the text */
+    border-radius: 8px; /* Optional: make the image corners rounded */
+}
+
+/* Remove scrollbar for horizontal scrolling */
+.services-container::-webkit-scrollbar {
+    display: none;
+}
+
+.services-container {
+    scrollbar-width: none;
+}
+
+
+/* Footer */
+footer {
+    display: flex; /*uses the size adjustable flex layout*/
+    justify-content: space-between; /* Separates contact info and links */
+    align-items: center; /* Aligns both sections vertically */
+    padding: 20px;
+    background-color: #F0F0F0;
+    border-top: 1px solid #ccc;
+    color: black; /* Ensure text is visible on the darker background */
+}
+
+.contacts {
+    margin: 5px;
+}
+
+.contacts p {
+    margin: 5px;
+    display: flex;
+}
+
+.footer-links {
+    margin-right: 20px; /* Space from the right */
+    text-align: right; /* Aligns the links to the right */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black; /* Ensure link text is visible on the gradient */
+    font-size: larger;
+    margin-left: 40px;
+}
+
+.footer-links a:hover {
+    color: blue; /* Change color on hover */
+}
+
+.span {
+    margin-left: 20px; /* Increase this value to move the line further away */
+    margin-right: 20px; /* Add space on the right for consistency */
+}

@@ -1,0 +1,201 @@
+.Logo
+{
+    /* Sets the width and height of the logo image */
+    width: 200px;  
+    height: 200px;
+    margin-left: 10%;
+    margin-right: auto;
+    display: flex;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+}
+/*Styling for the whole nav bar*/
+.header-nav
+{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    margin-left: 0%;
+    padding: 0%;
+
+}
+/*Adding style for individual items*/
+.header-nav li
+{
+    margin-left: 20px;
+    margin-right: auto;
+}
+/* Style the links in the nav bar */
+.header-nav li a {
+    /*Removing the underlines*/
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+
+    /*Creating the oval shape*/
+    padding: 20px 40px;
+    /*Setting the background color to change on hover*/
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 50px; /* Oval shape */
+    line-height: 1; 
+}
+
+/* Hover effect */
+.header-nav li a:hover {
+    background-color: black;
+    color: white;
+}
+body{
+    text-align: center;
+    font-family: sans-serif;
+    background-image:url("./images/hotel img.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+} 
+h1{
+    background-color: #C68A48    ;
+    color: white;
+}
+h3{
+    background-color:#FFCE8B;
+    color: white;
+}
+h2{
+    color: black;
+}
+.form-group{
+    color:black;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, select, textarea {
+    width: 20%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#submit_btn {
+    background-color: #4CAF50; 
+    color: white;             
+    padding: 10px 20px;        
+    border: none;              
+    cursor: pointer;           
+    font-size: 16px;           
+}
+
+#submit_btn:hover {
+    background-color: #0c0e0d; 
+}
+
+#reset_btn {
+    background-color: #f44336; 
+    color: white;             
+    padding: 10px 20px;        
+    border: none;             
+    cursor: pointer;           /* Pointer cursor on hover */
+    font-size: 16px;         
+}
+
+#reset_btn:hover {
+    background-color: #141313eb; 
+}
+
+.room-info{
+    color:rgb(11, 5, 5);
+}
+.highlight {
+    background-color: #FFCE8B;
+    color: black;            
+    font-weight: bold;        
+}
+.highlight_h{
+    background-color: #fbfb07; 
+    color: black;            
+    font-weight: bold;
+}
+
+#update-btn {
+    background-color: #0b16f2;
+    color: white;              
+    padding: 10px 20px;    
+    border: none;              
+    cursor: pointer;           
+    font-size: 16px;           
+}
+
+#update-btn:hover {
+    background-color: #08090a; /
+}
+
+#delete-btn {
+    background-color: #f44336; 
+    color: white;              
+    padding: 10px 20px;        
+    border: none;             
+    cursor: pointer;           
+    font-size: 16px;           
+}
+
+#delete-btn:hover {
+    background-color: #161515; 
+}
+
+/* Footer */
+footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #F0F0F0;
+    border-top: 1px solid #ccc;
+}
+
+.contacts
+{
+    margin: 5px;
+}
+
+.contacts p
+{
+    margin: 5px;
+    display: flex;
+}
+
+.footer-links {
+    margin-right: 20px; 
+    text-align: right; 
+}
+
+.footer-links a
+{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    margin-left: 40px;
+
+}
+.footer-links a:hover
+{
+    color: blue; 
+}
+
+.span
+{
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+
+
